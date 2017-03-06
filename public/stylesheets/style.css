@@ -1,0 +1,112 @@
+body {
+    padding-top: 50px;
+    color: white;
+}
+
+.banner {
+    
+    position: relative;
+    text-align: center;
+    align-content: center;
+    background: url(../images/ritesh%20new.jpg) no-repeat top;
+}
+
+.banner canvas, banner_tag{
+    position: absolute;
+} 
+
+.banner canvas{
+    display: block;
+    
+}
+
+@media only screen and (max-width:450px){    
+    .banner {    
+        text-align: center;
+        background: url(../images/ritesh%20mobile.jpg) no-repeat left top;
+        background-attachment: scroll;
+        background-size: cover;
+    }    
+    .banner .banner_tag{
+        padding-top: 60px;
+    }
+    .banner_btn{
+        background-color: transparent;
+        border: transparent;    
+    }
+}
+
+.banner_tag{
+    padding: 180px 15px;
+}
+.banner_btn{
+    background-color: transparent;
+    border: transparent;    
+}
+.banner_btn:hover{
+    font-weight: bolder;  
+    color: yellow;
+    transform: translate(0%,10%);
+    transition: color 2s;
+}
+.quotes{
+    font-style: italic;
+    color: aquamarine;
+}
+
+.social_links_div{
+    position: fixed;
+    top:250px;
+    left: 7px;
+    font-size: 20px;
+    background: transparent; 
+    z-index: 9999;
+}
+
+@media only screen and (max-width:666px){
+    .social_links_div{
+        position: inherit;
+        font-size: 20px;
+        background: transparent; 
+        z-index: 9999;
+    }
+    .social_links ul{        
+        list-style: none;    
+        text-align: center;        
+    }
+    .social_links li{
+        display: inline-block;
+    }
+}
+@media only screen and (max-height:450px){
+    .social_links_div{
+        position: inherit;
+        font-size: 20px;
+        background: transparent; 
+        z-index: 9999;
+    }
+    .social_links ul{
+        list-style: none;    
+        text-align: center;
+    }
+    .social_links li{
+        display: inline-block;
+    }
+}
+
+.social_links {
+    list-style: none;
+    padding: 1px;
+}
+.social_links a{
+    color: white;
+}
+.social_links a li:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+.social_links li{
+    padding: 5px;
+    margin-bottom: 2px;
+    border-style: solid;
+}
